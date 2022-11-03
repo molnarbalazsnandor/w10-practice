@@ -1,7 +1,7 @@
 const form = document.querySelector("#add-category");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  // megtiltja a html elem alapműködését (itt pl nem megyünk majd át a máv oldalra)
+  // megtiltja a html elem alapműködését (itt pl nem megyünk majd át a máv oldalra, vagy az url sávban nem jelennek meg a dolgok)
   const product = {
     name: document.querySelector("#name").value,
     category: document.querySelector("#category").value,
