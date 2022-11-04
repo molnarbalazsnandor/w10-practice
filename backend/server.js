@@ -19,7 +19,7 @@ app.use(fileUpload());
 app.get("/", (req, res) => {
   res.sendFile(path.join(`${__dirname}/../frontend/index.html`));
 });
-// __dirname: a kiindulási pont
+// __dirname: a kiindulási pont: ahol vagyunk
 // .. jelentés: kilép az adott mappából
 //azt hozzáfűztük a path-hoz: lényegében átküldtük a frontend index-re
 
@@ -36,6 +36,10 @@ Lehet fájlokat egyesével is linkelni, de egyszerőbb, ha az index.html-en kív
 De az index.html-ben javítani kell az útvonalakat!
 
 */
+
+app.get("/about", (req, res) => {
+  res.send("Hello");
+});
 
 app.use("/public", express.static(`${__dirname}/../frontend/public`));
 
