@@ -79,7 +79,7 @@ app.post("/upload-image", (request, response) => {
 });
 
 //az első mindig a request, a második a response(de bármilyen neve lehet a változóknak)
-//kell küldeni egy response-t különben sokáig ötltene az oldal (a 200-as státusz az hogy betöltött)
+//kell küldeni egy response-t különben sokáig töltene az oldal (a 200-as státusz az hogy betöltött)
 app.listen(port, () => {
   console.log(`Server is running at: http://127.0.0.1:${port}`);
 });
