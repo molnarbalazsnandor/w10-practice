@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 const path = require("path");
-//az elérési útvonal
+//globális változó, a helyi elérési útvonal mindig, jelen esetben: E:\Dokumentumok\Codecool\Git Repos, VS, whatnot\w10-practice>
 //require: importálás
 
 const fs = require("fs");
